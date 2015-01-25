@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_fwhite"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popwindow_position_itemHeight"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/popwindow_position_bg"
+        android:text="职位" />
+
+</LinearLayout>

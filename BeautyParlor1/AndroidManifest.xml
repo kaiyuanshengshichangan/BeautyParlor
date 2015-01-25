@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.henglianmobile.beautyparlor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <!-- app常用权限 -->
+    
+    <!-- ShareSDK -->
+	<uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<!-- ShareSDK -->
+    
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- app常用权限 -->
+
+<!-- android:name="com.henglianmobile.beautyparlor.activity.LoginActivity_" -->
+    <application
+        android:name="com.henglianmobile.beautyparlor.app.TApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.henglianmobile.beautyparlor.activity.Login"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录 -->
+        <!-- <activity
+            android:name="com.henglianmobile.beautyparlor.activity.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity> -->
+        <!-- 注册 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.activity.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <!-- 美容院注册补充界面 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.activity.BeautyParlorQualificationActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.activity.ForgetPwdActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <!-- 重置密码 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.activity.ResetPasswordActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <!-- 主界面 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.activity.MainActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- 选择图片 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.logic.ImgFileListActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.henglianmobile.beautyparlor.logic.ImgsActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 选择图片 -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- 美友圈详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.MeiYouQuanDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 美友圈-美友基本信息详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.MeiYouBaseInfoDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 发布美友圈帖子 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.PublishMeiYouQuanActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 资讯详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.ZiXunDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 显示多张图片 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.ShowPicturesActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 显示单张图片 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.ShowPictureActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- 消费者 -->
+        <!-- 征求方案 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.ProposalRequestPublishActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 我的方案 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.MyProposalActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 我的方案详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.ProposalDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 我的好友 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.MyFriends_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 搜美友 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.SearchFriendsActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 我的消息 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.MyInformationsActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 消费者修改个人信息 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.consumer.UpdatePeronalInfoActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 消费者 -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+       
+       
+       
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- 美容院 -->
+        <!-- 美容院-修改美容院资料 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.UpdateBeautyParlorActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院-发布广告 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.GuangGaoPublishActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 美容院-广告详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.MyGuangGaoDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院-消费明细 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.ExpenseDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院-消费明细 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.RechargeActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院-方案请求详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.ProposalRequestDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院-推出方案 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.PushProposalPublishActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 美容院-推出方案预览 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.ProposalDetailPreviewActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院-我的方案-方案详情 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.MyProposalDetailActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 美容院-选择支付方式 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.beautyparlor.PayTypeSelectActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 美容院 -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- 业务员 -->
+        <!-- 我的美容院 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.saleman.MyBeautyParlorActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <!-- 我的提成 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.activity.saleman.MyCommissionActivity_"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        
+        
+        <!-- ShareSDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.henglianmobile.beautyparlor.ui.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true" />
+        <!-- ShareSDK -->
+        <service android:name="com.henglianmobile.beautyparlor.service.UpdateApkService"></service>
+        
+    </application>
+
+</manifest>

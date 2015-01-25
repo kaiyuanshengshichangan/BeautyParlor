@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/color_fwhite"
+        android:padding="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_meiyou_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拾荒"
+                android:textColor="#202020"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_meiyou_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="天道留学-留学中介高端品牌天道留学-留学中介高端品牌天道留学-留学中介高端品牌天道留学-留学中介高端品牌天道留学-留学中介高端品牌"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_meiyou_pic"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:scaleType="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_meiyou_pics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_meiyou_pic1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_meiyou_pic2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <com.henglianmobile.beautyparlor.view.MyGridView
+            android:id="@+id/gv_meiyou_pics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="一分钟前"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+
+    <!-- title_background -->
+    <color name="title_background">#CB3398</color>
+    <!-- 红色 -->
+    <color name="color_red">#ff0000</color>
+    <!-- 白色 -->
+    <color name="color_fwhite">#ffffff</color>
+    <!-- 背景白 -->
+    <color name="color_white">#f1f1f1</color>
+    <!-- 输入框提示字体颜色 -->
+    <color name="color_gray">#808080</color>
+    <color name="color_gray1">#a6a6a6</color>
+    <color name="color_gray2">#cdcdcd</color>
+    <!-- 输入框字体颜色 -->
+    <color name="color_black">#222222</color>
+    <!-- 输入框字体颜色 -->
+    <color name="color_grey_hui">#BEBEBE</color>
+
+    <!-- 输入框字体蓝色 -->
+    <color name="text_color_blue_358">#335588</color>
+    <!-- 弹窗背景颜色 -->
+    <color name="tc_bg_color">#f4f4f4</color>
+    <!-- 弹窗触摸背景颜色 -->
+    <color name="tc_cmbg_color">#cccccc</color>
+    <!-- 注册成功提示信息 -->
+    <color name="re_toast_color">#f98b01</color>
+    <!-- 注册成功客服信息 -->
+
+    <color name="re_server_color">#333333</color>
+    <!-- 汽车列表切换按钮颜色 -->
+    <color name="color_grey_e7">#e7e7e7</color>
+
+    <drawable name="pop_position_normal">#ffffff</drawable>
+    <drawable name="pop_position_selected">#eeeeee</drawable>
+
+    <color name="gray_f1f1f2">#f1f1f2</color>
+    <color name="gray_666">#666666</color>
+    <color name="gray_b0afaf">#b0afaf</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 粉色 -->
+    <color name="light_pink">#e9544a</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_cecccc">#cecccc</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 天蓝色 -->
+    <color name="gray">#808080</color>
+
+    <!-- issue5 -->
+    <color name="transparentBlack">#6D000000</color>
+	<color name="darkgrey">#949494</color>
+</resources>

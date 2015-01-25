@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/title_background" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="方案详情"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@color/color_white"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fwhite"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="XX给XX推出的整容X部的方案"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="XX给XX推出的整容X部的方案"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_14" />
+
+                <ImageView
+                    android:id="@+id/iv_meiyou_pic"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:scaleType="center"
+                    android:src="@drawable/beijing1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_meiyou_pics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_meiyou_pic1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/iv_meiyou_pic2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <com.henglianmobile.beautyparlor.view.MyGridView
+                    android:id="@+id/gv_meiyou_pics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_publish_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center_vertical"
+                    android:text="一分钟前"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_pinglun"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fwhite" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/shape005_title_background_color"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="回复"
+            android:textColor="@color/title_background"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_submit_commit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/title_background"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="发送"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</LinearLayout>
